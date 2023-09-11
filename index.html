@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Divyesh - Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/b268916062.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+                          <!-- HEADER -->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <h1>Hi, I'm <span>Divyesh</span><br>From India</h1>
+          <p>I am a <span id="role"></span></p>
+        </div>
+      </div>
+    </div>
+
+                          <!-- ABOUT -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="images/user.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:15px">
+                </div>
+                <div class="flip-box-back">
+                  <img src="images/flip_user.png" style="width:100%;height:100%;object-fit:cover;border-radius:15px">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>I am a recently graduated B.Tech student with a focus on Computer Science, with experience in Python, C, Java, and SQL programming languages.<br><br>Throughout my academic career, I have developed strong analytical, problem-solving, and communication skills, which have been further enhanced through various internships and extracurricular activities. I am passionate about leveraging technology to make a positive impact on society.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>C</span><br>
+                  Proficient in C programming with expertise in low-level development and memory management.
+                </li>
+
+                <li><span>Python</span><br>
+                  Proficient in Python programming, emphasizing core language skills.
+                </li>
+
+                <li><span>SQL</span><br>
+                  Proficient in SQL with a strong background in database design and querying.
+                </li>
+
+                <li><span>Java</span><br>
+                  Proficient in Java programming, emphasizing object-oriented design and development principles.
+                </li>
+
+                <li><span>HTML</span><br>
+                  Proficient in HTML5 for structured web content creation and design.
+                </li>
+
+                <li><span>CSS</span><br>
+                  Proficient in CSS3 for web styling and layout, ensuring cross-browser compatibility.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span class="left">Artificial Intelligence Intern</span>
+                  <span class="right">Aug 2022 - Sep 2022</span><br>
+                  Coincent<br>
+                  As part of the internship, I have worked on a project: Fashion MNIST Data Classification using various ML libraries in Python which gained me a certificate.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span class="left">Bachelor of Technology in Computer Science</span>
+                  <span class="right">2019 - 2023</span><br>
+                  Sree Venkateswara College of Engineering<br>
+                  8.92 CGPA
+                </li>
+
+                <li><span class="left">Intermediate in MPC</span>
+                  <span class="right">2017 - 2019</span><br>
+                  Narayana Junior College<br>
+                  10.0 CGPA
+                </li>
+
+                <li><span class="left">SSC</span>
+                  <span class="right">2016 - 2017</span><br>
+                  Roshini Ratnam E.M. High School<br>
+                  10.0 CGPA
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+                          <!-- SERVICES -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>I specialize in turning your ideas into stunning and functional websites. My expertise lies in creating responsive and user-friendly web solutions tailored to your needs. From design to deployment, I've got your web development needs covered.</p>
+            <a href="https://wa.me/918247679738" target="_blank"><img src="images/WhatsAppButtonGreenLarge.png" alt=""></a>
+          </div>
+
+          <div>
+            <i class="fa-regular fa-pen-to-square"></i>
+            <h2>Programming Blogs</h2>
+            <p>Delve into the world of programming through my blogs. I share insights, tips, and tutorials on various programming topics. Stay informed about the latest industry trends and empower yourself with my knowledge.</p>
+            <a href="https://wa.me/918247679738" target="_blank"><img src="images/WhatsAppButtonGreenLarge.png" alt=""></a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Programming Classes</h2>
+            <p>Join my programming classes to embark on a journey of learning and skill development. Whether you're starting from scratch or aiming to advance your coding abilities, I offer structured courses suitable for all levels, preparing you for a successful programming career.</p>
+            <a href="https://wa.me/918247679738" target="_blank"><img src="images/WhatsAppButtonGreenLarge.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+                          <!-- PORTFOLIO -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Works</h1>
+        <div class="works-list">
+          <div class="work">
+            <img src="images/DrumKit.png" alt="">
+            <div class="layer">
+              <h3>Drum Kit</h3>
+              <p>It is a web based project.<br><br>The objective of this project is to develop a website which plays appropriate sounds of musical instruments when clicked on their images or by using keyboard input.</p>
+              <a href="https://divyesh2802.github.io/drumkit/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/WardrobeCategorization.png" alt="">
+            <div class="layer">
+              <h3>Wardrobe Categorization using Artificial Intelligence</h3>
+              <p>It is an AI & ML based project.<br><br>The objective of this project is to develop a machine which identifies the category of clothing and classifies them accordingly.</p>
+              <a href="https://github.com/Divyesh2802/fashion-mnist-data-classification" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/HandGestures.png" alt="">
+            <div class="layer">
+              <h3>Technology That Allows the Deaf and the Mute to Communicate Using Only Their Hands</h3>
+              <p>It is my final semester major project.<br><br>This project aimed to develop an innovative solution to help individuals with hearing and speech impairments communicate using only hand gestures. It is an honor to have our work recognized and published in a prestigious journal IJAEMA.</p>
+              <a href="https://github.com/Divyesh2802/hand-gesture-recognition-voice-conversion" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://github.com/Divyesh2802?tab=repositories" target="_blank" class="btn">See More</a>
+      </div>
+    </div>
+
+                          <!-- CONTACT -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><a href="mailto:divyeshchinni524@gmail.com?subject=contact"><i class="fa-solid fa-envelope"></i>divyeshchinni524@gmail.com</a></p>
+            <p><a href="tel:+918247679738"><i class="fa-solid fa-phone"></i>+91 8247679738</p></a>
+            <p>Thank you for visiting my personal portfolio website.<br>Connect with me over socials.</p>
+
+            <div class="social">
+              <a href="https://www.linkedin.com/in/divyesh-chinni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/saidivyesh.chinni" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/divyesh_chinni/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/Divyesh2802/" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.hackerrank.com/divyeshchinni" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+            </div>
+
+            <a href="images/Divyesh_Resume.pdf" class="btn btn2" target="_blank">Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" method="post">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" cols="80" placeholder="Your Message"></textarea><br>
+              <button type="submit" name="button" class="btn btn2">Submit</button>
+            </form>
+
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+                          <!-- FOOTER -->
+
+      <div class="copyright">
+        <p>Copyright © <span>Divyesh</span>.<br>2023</p>
+      </div>
+    </div>
+
+    <script>
+      var smenu = document.getElementById('sidemenu');
+
+      function openmenu() {
+        smenu.style.right = "0";
+      }
+
+      function closemenu() {
+        smenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbya5RmNQDa39NtINFUe5vY4A4lGQ-j4wUX0VIRFjm_9_2nrl3lCe7ni2OwNQtnP5cuiig/exec';
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg')
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully!";
+          setTimeout(function() {
+            msg.innerHTML = "";
+          },1000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+  </body>
+</html>
